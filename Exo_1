@@ -1,0 +1,11 @@
+for n in range (1,999):
+	m =n
+	L= []
+	q= math.floor(math.log10(n))
+	for i in range (q,-1,-1):
+		d, n = divmod (n,10**i)
+		L.append(d)
+	R= L[:]
+	R.reverse()
+	if L == R:
+		print(m)
